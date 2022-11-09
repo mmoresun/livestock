@@ -17,15 +17,15 @@ export default function reducer(state = tickerState, action) {
 
             for (let i = 0; i < state.map(item => +item.price).length; ++i) {
 
-                if (state.map(item => +item.price)[i] < action.payload.map(item => +item.price)[i]) {
+                if (action.payload.map(item => +item.price)[i] > state.map(item => +item.price)[i]) { // compare new price with previous one
 
-                    compareArr.push(false);
+                    compareArr.push(true); // if bigger add 'true' to compareArr
                 }
                 else {
 
-                    compareArr.push(true)
+                    compareArr.push(false) // if smaller add 'false' to compareArr
                 }
-            }            
+            }
             // https://ru.stackoverflow.com/questions/1437301/%d0%9a%d0%b0%d0%ba-%d0%b4%d0%be%d0%b1%d0%b0%d0%b2%d0%b8%d1%82%d1%8c-%d0%ba%d0%b0%d0%b6%d0%b4%d1%8b%d0%b9-%d1%8d%d0%bb%d0%b5%d0%bc%d0%b5%d0%bd%d1%82-%d0%bc%d0%b0%d1%81%d1%81%d0%b8%d0%b2%d0%b0-%d0%b2-%d0%be%d0%b1%d1%8a%d0%b5%d0%ba%d1%82-%d1%82%d0%b0%d0%ba%d0%b8%d0%bc-%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%be%d0%bc
 
             // add to every action.payload object one more key 'isIncreased' with value from compareArr
