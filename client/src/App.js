@@ -5,10 +5,8 @@ import { useSelector } from "react-redux";
 import { store } from "./index";
 import { v4 as uuidv4 } from 'uuid';
 
-// start server and emitting
-//const ENDPOINT = 'https://gleaming-froyo-263b35.netlify.app/';
+// connect to server
 const ENDPOINT = 'https://mytickers.herokuapp.com/';
-// const ENDPOINT = 'http://localhost:4000/';
 const socket = io(ENDPOINT);
 socket.on("connect", () => console.log(socket.connected));
 socket.emit("start");
@@ -64,8 +62,8 @@ function App() {
             mytickers.map((item) => {
               return <h5
                 key={uuidv4()}
-                style={{ color: item.isIncreased ? 'red' : 'green' }}
-              >{item.price} {item.isIncreased ? <i class="fa-solid fa-arrow-up"></i> : <i class="fa-solid fa-arrow-down"></i>}</h5>;
+                style={{ color: item.isIncreased ? 'green' : 'red' }}
+              >{item.price}&nbsp;{item.isIncreased ? <i className="fa-solid fa-arrow-up"></i> : <i className="fa-solid fa-arrow-down"></i>}</h5>;
             })
             : 'none'}
         </div>
@@ -125,7 +123,7 @@ function App() {
           })}
         </div>
       </div>
-      <h6>Powered by socket.io, React.js/Redux, HTML/CSS, server side hosted by Heroku</h6>
+      <h6>Powered by socket.io, React.js/Redux, HTML/CSS, server side hosted by Heroku. All prices are randomly generated</h6>
     </div>
   );
 }
