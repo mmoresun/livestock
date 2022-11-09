@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/livestock/static/css/main.a38e80bd.chunk.css",
-    "main.js": "/livestock/static/js/main.0e13a641.chunk.js",
-    "main.js.map": "/livestock/static/js/main.0e13a641.chunk.js.map",
+    "main.css": "/livestock/static/css/main.8a14ec21.chunk.css",
+    "main.js": "/livestock/static/js/main.81c1d4fb.chunk.js",
+    "main.js.map": "/livestock/static/js/main.81c1d4fb.chunk.js.map",
     "runtime-main.js": "/livestock/static/js/runtime-main.f543f7db.js",
     "runtime-main.js.map": "/livestock/static/js/runtime-main.f543f7db.js.map",
     "static/js/2.e2b1fed5.chunk.js": "/livestock/static/js/2.e2b1fed5.chunk.js",
     "static/js/2.e2b1fed5.chunk.js.map": "/livestock/static/js/2.e2b1fed5.chunk.js.map",
     "index.html": "/livestock/index.html",
-    "static/css/main.a38e80bd.chunk.css.map": "/livestock/static/css/main.a38e80bd.chunk.css.map",
+    "static/css/main.8a14ec21.chunk.css.map": "/livestock/static/css/main.8a14ec21.chunk.css.map",
     "static/js/2.e2b1fed5.chunk.js.LICENSE.txt": "/livestock/static/js/2.e2b1fed5.chunk.js.LICENSE.txt",
     "static/media/index.css": "/livestock/static/media/background.294174fa.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.f543f7db.js",
     "static/js/2.e2b1fed5.chunk.js",
-    "static/css/main.a38e80bd.chunk.css",
-    "static/js/main.0e13a641.chunk.js"
+    "static/css/main.8a14ec21.chunk.css",
+    "static/js/main.81c1d4fb.chunk.js"
   ]
 }
